@@ -8,6 +8,7 @@ const navItems = [
   { ar: 'خدماتنا', en: 'Services', href: '#services' },
   { ar: 'احجزي الآن', en: 'Book Now', href: '#booking' },
   { ar: 'آراء العملاء', en: 'Testimonials', href: '#testimonials' },
+  { ar: 'الكورسات', en: 'Courses', href: '#courses' },
   { ar: 'المدونة', en: 'Blog', href: '#blog' },
   { ar: 'الفروع', en: 'Locations', href: '#locations' },
 ];

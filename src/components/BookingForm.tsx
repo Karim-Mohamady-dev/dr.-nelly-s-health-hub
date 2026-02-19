@@ -2,7 +2,7 @@ import { useState, FormEvent } from 'react';
 import { useLang } from '@/contexts/LanguageContext';
 import { Send } from 'lucide-react';
 
-const WHATSAPP_NUMBER = '201000000000'; // Editable placeholder
+const WHATSAPP_NUMBER = '201119500192';
 
 const BookingForm = () => {
   const { t } = useLang();
@@ -11,7 +11,8 @@ const BookingForm = () => {
   const goals = [
     { ar: 'فقدان الوزن', en: 'Weight Loss' },
     { ar: 'تغذية علاجية', en: 'Therapeutic Nutrition' },
-    { ar: 'خطة صحية عامة', en: 'General Health Plan' },
+    { ar: 'صحة عامة', en: 'Public Health' },
+    { ar: 'متابعة', en: 'Follow-up' },
   ];
 
   const branches = [

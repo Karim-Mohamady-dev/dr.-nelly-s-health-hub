@@ -34,12 +34,20 @@ const Hero = () => {
                 'With Dr. Nelly Shams, get a personalized nutrition plan designed for your unique health needs. We help you achieve your health goals with scientific methods and continuous follow-up.'
               )}
             </p>
-            <button
-              onClick={scrollToBooking}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full text-lg btn-glow glow-primary hover:scale-105 transition-transform"
-            >
-              {t('احجزي استشارتك الآن', 'Book Your Consultation')}
-            </button>
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+              <button
+                onClick={scrollToBooking}
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full text-lg btn-glow glow-primary hover:scale-105 transition-transform"
+              >
+                {t('احجزي الآن', 'Book Now')}
+              </button>
+              <a
+                href="tel:01119500192"
+                className="inline-flex items-center gap-2 px-8 py-4 border-2 border-primary text-primary font-bold rounded-full text-lg hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all"
+              >
+                {t('تواصل عبر الهاتف', 'Call Us')}
+              </a>
+            </div>
           </div>
 
           {/* Image */}
