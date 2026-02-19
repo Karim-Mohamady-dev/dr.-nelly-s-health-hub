@@ -2,10 +2,9 @@ import { useLang } from '@/contexts/LanguageContext';
 import { Facebook, Instagram, Linkedin, MessageCircle, MapPin, Phone, Mail } from 'lucide-react';
 
 const socials = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: MessageCircle, href: '#', label: 'WhatsApp' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  { icon: Facebook, href: 'https://www.facebook.com/DrNillyShams', label: 'Facebook' },
+  { icon: Instagram, href: 'https://www.instagram.com/nillyshams', label: 'Instagram' },
+  { icon: MessageCircle, href: 'https://wa.me/201119500192', label: 'WhatsApp' },
 ];
 
 const Footer = () => {
@@ -36,7 +35,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 shrink-0" />
-                <span className="text-sm" dir="ltr">+20 100 000 0000</span>
+                <a href="tel:01119500192" className="text-sm hover:text-primary transition-colors" dir="ltr">01119500192</a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 shrink-0" />
@@ -54,6 +53,8 @@ const Footer = () => {
                   key={i}
                   href={s.href}
                   aria-label={s.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all"
                 >
                   <s.icon className="w-5 h-5" />
